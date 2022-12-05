@@ -1,0 +1,24 @@
+
+#youtube-logo{
+    width: 100px;
+}
+
+#search-logo{
+    width: 24px;
+    height: 24px;
+    background-color: rgb(39, 39, 39);
+}
+
+#search-logo:hover{
+    backgound-color: rgb(39, 39, 39);
+}
+
+.nav-top{
+    width: 100%;
+    height: 56px;
+}
+
+.nav-left{
+    width: 256px;
+    height: 100%;
+}
