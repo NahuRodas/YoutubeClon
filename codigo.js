@@ -18,3 +18,26 @@ function generador() {
     return "https://www.youtube.com/watch?v=" + codigoVideo;
 }
  */
+
+var sidebar = document.getElementById('sidebar'),
+    menuBtn = document.getElementById('drop-button'),
+    videosGrid = document.getElementById('videos-grid');
+
+
+menuBtn.addEventListener('click', ()=>{
+
+    if(sidebar.style.width != "0px"){
+        sidebar.style.width="0px";
+        videosGrid.style.left = "0";
+        videosGrid.style.paddingRight = "2%";
+        videosGrid.style.gridTemplateColumns = "repeat(5,1fr)"
+    }
+    else if (sidebar.style.width != "256px") {
+        sidebar.style.width="256px";
+        videosGrid.style.left = "250px";
+        videosGrid.style.paddingRight = "15%";
+        videosGrid.style.gridTemplateColumns = "repeat(4,1fr)"
+    }
+
+});
+
